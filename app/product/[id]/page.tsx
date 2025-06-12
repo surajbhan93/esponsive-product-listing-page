@@ -1,11 +1,18 @@
-import React from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
-export default async function ProductDetails({ params }: { params: { id: string } }) {
-  const res = await fetch(`https://fakestoreapi.com/products/${params.id}`);
+type ProductParams = {
+  params: Promise<{
+    id: string;
+  }>;
+};
 
-  if (!res.ok) return notFound(); // handle invalid product ID
+export default async function ProductDetails({ params }: ProductParams) {
+  const { id } = await params;
+
+  const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+
+  if (!res.ok) return notFound();
 
   const product = await res.json();
 
