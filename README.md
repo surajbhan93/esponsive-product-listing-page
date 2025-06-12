@@ -1,6 +1,85 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+# Responsive Product Listing Page
+
+This is a responsive product listing page built with **React.js**, **Next.js**, and **Bootstrap**. The project fetches data from the [Fake Store API](https://fakestoreapi.com/products) and supports **Server-Side Rendering (SSR)** using `getServerSideProps`.
+
+---
+
+## 🔧 Tech Stack
+
+- React.js
+- Next.js
+- Bootstrap v5
+- Fetch API
+- TypeScript (✅ Bonus)
+- Deployed on Vercel
+
+---
+
+## 🚀 Features
+
+✅ **Server-Side Rendering (SSR)** via `getServerSideProps`  
+✅ **Product listing page** displaying:  
+&nbsp;&nbsp;&nbsp;&nbsp;• Product image  
+&nbsp;&nbsp;&nbsp;&nbsp;• Title  
+&nbsp;&nbsp;&nbsp;&nbsp;• Price  
+&nbsp;&nbsp;&nbsp;&nbsp;• Category  
+&nbsp;&nbsp;&nbsp;&nbsp;• Rating  
+✅ **Client-side search filter** by product title  
+✅ **Loading spinner** during client-side search  
+✅ **Responsive layout** using Bootstrap Grid  
+✅ **Dynamic product details page** via `/product/[id]`  
+✅ **TypeScript integration**  
+✅ **Pagination** (bonus)
+✅ **Add unit tests using Jest or React Testing Library.** (bonus)
+
+---
+
+## 🖼️ Screenshots
+![Screenshot 2025-06-12 223508](https://github.com/user-attachments/assets/05899f62-8a7b-4f3e-ac46-d64a4032f04a)
+
+![Screenshot 2025-06-12 223527](https://github.com/user-attachments/assets/2dcebbcf-91ab-4835-b636-9db29787d46e)
+
+![Screenshot 2025-06-12 223545](https://github.com/user-attachments/assets/1ddd25d4-c951-4553-b5e9-0b6a11d9f008)
+
+### 🏠 Home Page
+Displays a responsive grid of product cards with search functionality.
+
+### 📄 Product Details Page
+Shows full product details based on dynamic routing.
+
+---
+## 🛠️ Setup Instructions
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/surajbhan93/esponsive-product-listing-page.git
+cd esponsive-product-listing-page
+
+### 📄2. Install dependencies
+npm install
+### 📄3. Start the development server
+
+### 📄 npm run dev
+Access the app at http://localhost:3000
+
+### 📄4. Build for production
+npm run build
+npm start
+
+
+## 📦 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/surajbhan93/esponsive-product-listing-page.git
+cd esponsive-product-listing-page
 
 First, run the development server:
 
