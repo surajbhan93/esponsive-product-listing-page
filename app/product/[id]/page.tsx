@@ -1,5 +1,6 @@
 import React from 'react';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 
 export default async function ProductDetails({ params }: { params: { id: string } }) {
   const res = await fetch(`https://fakestoreapi.com/products/${params.id}`);
@@ -29,7 +30,7 @@ export default async function ProductDetails({ params }: { params: { id: string 
                   <p><strong>Price:</strong> ₹{product.price}</p>
                   <p><strong>Category:</strong> {product.category}</p>
                   <p><strong>Rating:</strong> {product.rating?.rate ?? 'N/A'} ⭐</p>
-                  <a href="/" className="btn btn-primary mt-3">← Back to Products</a>
+                  <Link href="/" className="btn btn-primary mt-3">← Back to Products</Link>
                 </div>
               </div>
             </div>
