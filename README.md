@@ -72,7 +72,26 @@ Access the app at http://localhost:3000
 npm run build
 npm start
 
+'''
+assumptions:
+  - Fake Store API data is static; no real-time updates needed
+  - Client-side filtering after SSR fetch
+  - Used <img> instead of next/image for simplicity
+  - Bootstrap used without custom media queries
+  - Product detail pages assume valid product IDs from API
+  - Pagination is client-side for simplicity
 
+submission:
+  github_repo: https://github.com/surajbhan93/esponsive-product-listing-page
+  live_demo: [https://esponsive-product-listing-page-w6dv.vercel.app](https://esponsive-product-listing-page-w6dv.vercel.app/)
+
+author:
+  name: Suraj Bhan
+  email: XXX
+  github: https://github.com/surajbhan93
+
+
+  
 ## 📦 Getting Started
 
 ### 1. Clone the repository
