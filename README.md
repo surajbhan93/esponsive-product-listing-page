@@ -13,6 +13,7 @@ pnpm dev
 # or
 bun dev
 ```
+SSR (Server-Side Rendering) and useEffect (Client-Side Effect) in Next.js (and React)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
