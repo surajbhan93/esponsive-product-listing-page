@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Row, Col, Card, Form, Spinner, Pagination } from 'react-bootstrap';
 import Link from 'next/link';
 
-//interface by Product means add many features
+//interface by Product means add many features who fetch by api
 export interface Product {
   id: number;
   title: string;
@@ -18,8 +18,10 @@ interface Props {
 }
 
 export default function ClientProductList({ products }: Props) {
+  // use of states
   const [filtered, setFiltered] = useState<Product[]>(products);
   const [search, setSearch] = useState('');
+  
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const ITEMS_PER_PAGE = 8;
@@ -54,7 +56,7 @@ export default function ClientProductList({ products }: Props) {
         value={search}
         onChange={e => setSearch(e.target.value)}
       />
-
+{/* loading of the page  */}
       {loading ? (
         <div className="text-center">
           <Spinner animation="border" />
@@ -62,14 +64,16 @@ export default function ClientProductList({ products }: Props) {
       ) : (
         <>
           <Row>
-            {/* {/* aab ya yaha se product grid start hogi*\} */}
+{/*             {/* aab ya yaha se product grid start hogi*\}  */}
             {paginatedProducts.map(product => (
               <Col sm={12} md={6} lg={4} xl={3} key={product.id} className="mb-4">
+{/*                 fetch the product id */}
                 <Link
                   href={`/product/${product.id}`}
                   style={{ textDecoration: 'none', color: 'inherit' }}
                 >
                   <Card className="h-100 shadow-sm border-0 product-card">
+{/*                     Now fetch the image fromm the api */}
                     <div className="text-center p-3">
                       <Card.Img
                         variant="top"
@@ -77,13 +81,19 @@ export default function ClientProductList({ products }: Props) {
                         style={{ height: '200px', objectFit: 'contain' }}
                       />
                     </div>
+{/*                     now fetch the product title */}
                     <Card.Body>
                       <Card.Title className="text-truncate" title={product.title}>
                         {product.title}
                       </Card.Title>
+{/*                       Now fetch the product price */}
                       <Card.Text>
-                        <span className="fw-bold text-success">₹{product.price}</span> <br />
-                        <small className="text-muted">{product.category}</small><br />
+                        <span className="fw-bold text-success">₹{product.price}</span> 
+                        <br />
+{/*                         now fetch the product category */}
+                        <small className="text-muted">{product.category}</small>
+                        <br />
+{/*                       now product rating */}
                         <span>⭐ {product.rating?.rate}</span>
                       </Card.Text>
                     </Card.Body>
