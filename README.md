@@ -1,6 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+
 # Responsive Product Listing Page
 
 This is a responsive product listing page built with **React.js**, **Next.js**, and **Bootstrap**. The project fetches data from the [Fake Store API](https://fakestoreapi.com/products) and supports **Server-Side Rendering (SSR)** using `getServerSideProps`.
