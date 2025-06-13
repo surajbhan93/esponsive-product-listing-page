@@ -14,7 +14,7 @@ This is a responsive product listing page built with **React.js**, **Next.js**, 
 - Bootstrap v5
 - Fetch API
 - TypeScript (✅ Bonus)
-- Deployed on Vercel
+-  [Deployed on Vercel](https://esponsive-product-listing-page-w6dv.vercel.app/)
 
 ---
 
@@ -83,7 +83,7 @@ assumptions:
 
 submission:
   github_repo: https://github.com/surajbhan93/esponsive-product-listing-page
-  live_demo: [https://esponsive-product-listing-page-w6dv.vercel.app](https://esponsive-product-listing-page-w6dv.vercel.app/)
+  live_demo: [Live]_(https://esponsive-product-listing-page-w6dv.vercel.app/)
 
 author:
   name: Suraj Bhan
